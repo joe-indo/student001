@@ -1,0 +1,640 @@
+body {
+     background-color: black;
+}
+/* Navigation Bar ----Start---- */
+ .header-nav{
+     position: absolute;
+     top: 5%;
+     left: 8%;
+}
+ ul {
+     list-style: none;
+}
+ li {
+     float: left;
+}
+ li a {
+     display: block;
+     color: white;
+     text-decoration: none;
+     font-size: 12px;
+     padding: 14px 27px;
+     font-weight: bold;
+}
+ .nav-font {
+     font-family: 'Cabin', sans-serif;
+}
+.con5 {
+    position: absolute;
+    top: 943px;
+    left: 710px;
+}
+.con6 {
+    position: absolute;
+    right: 190px;
+    top: 943px;
+}
+.color-change {
+  font-size: 13px;
+}
+.color-change-pos1 {
+  position: absolute;
+  left: 30px;
+  top: 250px;
+  cursor: pointer;
+}
+.color-change-pos1:hover {
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+}
+.color-change-pos2:hover {
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+}
+.color-change-pos3:hover {
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+}
+.color-change-pos4:hover {
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+}
+.color-change-pos2 {
+  position: absolute;
+  left: 100px;
+  top: 250px;
+}
+.color-change-pos3 {
+  position: absolute;
+  right: 100px;
+  top: 250px;
+}
+.color-change-pos4 {
+  position: absolute;
+  right: 30px;
+  top: 250px;
+}
+#cashout {
+     color: white;
+     text-decoration: none;
+     font-size: 12px;
+     border-radius: 15px;
+     background-color: transparent;
+     padding: 5px 7px;
+     font-family: 'Cabin', sans-serif;
+     border: 2px solid #676efe;
+     cursor: pointer;
+     position: absolute;
+     top: 40%;
+     left: 122%;
+     font-weight: bold;
+}
+#cashout:hover {
+     cursor: pointer;
+     background-color: #676efe;
+     transition: 0.4s;
+}
+ .logo {
+     color: white;
+     text-decoration: none;
+     font-size: 15px;
+     border-radius: 20px;
+     background-color: transparent;
+     position: absolute;
+     padding: 5px 7px;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: bold;
+     border: 2px solid #676efe;
+     left: 0%;
+     top: 36%;
+     cursor: pointer
+}
+/* ----End---- */
+ #bg{
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: -100;
+    /* Preserve aspet ratio */
+     min-width: 100%;
+     min-height: 100%;
+}
+ #bg2{
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: -100;
+     min-width: 100%;
+     min-height: 100%;
+}
+ .mySlides{
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: -100;
+    /* Preserve aspet ratio */
+     min-width: 100%;
+     min-height: 100%;
+}
+ .slidebtn {
+     font-size: 50px;
+     text-decoration: none;
+     border: none;
+     background-color: transparent;
+     color: white;
+     top: 42%;
+     position: absolute;
+     cursor: pointer;
+}
+ .right{
+     right: 1%;
+}
+ .left {
+     right: 1%;
+     top: 50%;
+}
+ .welcome {
+     font-family: 'Roboto', sans-serif;
+     font-size: 13px;
+     font-weight: bold;
+     color: white;
+     position: absolute;
+     top: 50%;
+     left: 0%;
+     transform: rotate(270deg);
+     cursor: context-menu;
+     -webkit-animation: fadein 2s;
+}
+ .title {
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 700;
+     font-size: 100px;
+     position: fixed;
+     top: 25%;
+     left: 20%;
+     color: white;
+     cursor: context-menu;
+     -webkit-animation: fadein 2s;
+}
+ .bcktitle {
+     font-weight: bold;
+     font-family: 'Roboto', sans-serif;
+     position: fixed;
+     color: white;
+     font-size: 320px;
+     opacity: 0.2;
+     left: -5%;
+     cursor: context-menu;
+}
+ .promo {
+     color: white;
+     text-decoration: none;
+     font-size: 12px;
+     border-radius: 15px;
+     background-color: transparent;
+     padding: 5px 7px;
+     font-family: 'Cabin', sans-serif;
+     border: 2px solid #676efe;
+     cursor: pointer;
+     position: absolute;
+     top: 40%;
+     left: 100%;
+     font-weight: bold;
+}
+ .promo:hover {
+     cursor: pointer;
+     background-color: #676efe;
+     transition: 0.4s;
+}
+ .arcade {
+     background-color: #2A2A36;
+     color: white;
+}
+ .header-nav-box {
+     height: 90px;
+     width: 100%;
+     position: fixed;
+     background-color: #2A2A36;
+     top: 0;
+     left: 0;
+     z-index: 300;
+}
+ .header-nav-shadow {
+     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+ .intro {
+     font-family: 'Cabin', sans-serif;
+     z-index: -100;
+}
+ .main {
+     position: relative;
+     margin-top: 150px;
+     cursor: context-menu;
+     text-align: center;
+}
+ .sub {
+     text-align: center;
+     position: relative;
+     margin-top: 10px;
+     cursor: context-menu;
+}
+ .content {
+     position: absolute;
+     height: 450px;
+     width: 368px;
+     background-color: #26242d;
+     border-radius: 20px;
+}
+ .content:hover {
+     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+ .con1 {
+     top: 40%;
+     left: 10%;
+     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.con4 {
+    position: absolute;
+     top: 948px;
+     left: 10%;
+     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+ .con2 {
+     top: 40%;
+     left: 37.3%;
+}
+.store-img-back {
+  position: fixed;
+	top: 0;
+	left: 0;
+	/* Preserve aspet ratio */
+	min-width: 100%;
+	min-height: 100%;
+  z-index: -500;
+  opacity: 0.6;
+}
+
+ .con3 {
+     top: 40%;
+     right: 9.7%;
+}
+ .ticimg {
+     background-size: contain;
+     width: 160px;
+     height: 160px;
+     margin-top: 65px;
+     margin-left: 100px;
+}
+.imgracegame {
+  background-size: contain;
+  width: 360px;
+  height: 120px;
+  margin-top: 65px;
+  margin-left: 5px;
+}
+.imgslot {
+   background-size: contain;
+  width: 233.5px;
+  height: 180px;
+  margin-top: 30px;
+  margin-left: 50px;
+ 
+}
+.imggghide {
+background-size: contain;
+  width: 250px;
+  height: 250px;
+  margin-top: 0px;
+  margin-left: 50px;
+}
+.pacman {
+     height: 200px;
+     width: 300px;
+     z-index: 100;
+     margin-top: 40px;
+     margin-left: 33px;
+}
+.despos3 {
+     text-align: center;
+     margin-top: 43px;
+}
+.despos5 {
+    text-align: center;
+     margin-top: 0px;
+}
+ .pacmanimg {
+     background-size: contain;
+     width: 256px;
+     height: 60.5px;
+     margin-top: 65px;
+     margin-left: 22px;
+}
+ .brickimg {
+     background-size: contain;
+     width: 256px;
+     height: 128px;
+     margin-top: 65px;
+     margin-left: 60px;
+}
+ .description {
+     font-family: 'Cabin', sans-serif;
+     font-size: 13px;
+     cursor: context-menu;
+}
+ .despos1 {
+     margin-top: 100px;
+     position: relative;
+     text-align: center;
+}
+ .despos2 {
+     position: relative;
+     margin-top: 75px;
+     text-align: center;
+}
+ .playgame {
+     color: white;
+     text-decoration: none;
+     font-size: 17px;
+     font-weight: bold;
+     border-radius: 10px;
+     background-color: transparent;
+     padding: 9px 26px;
+     font-family: 'Cabin', sans-serif;
+     border: 2px solid #676efe;
+     cursor: pointer;
+     z-index: 200;
+}
+ .buttonpos1 {
+     margin-top: 12px;
+     margin-left: 100px;
+}
+ .buttonpos2 {
+     margin-top: 12px;
+     margin-left: 140px;
+}
+ .playgame:hover {
+     cursor: pointer;
+     background-color: #676efe;
+     transition: 0.6s;
+}
+ #bitcoin {
+     font-family: 'Roboto', sans-serif;
+     font-weight: bold;
+     position: absolute;
+     top: 14%;
+     right: 4%;
+}
+ .bit {
+     font-family: 'Cabin', sans-serif;
+     position: absolute;
+     top: 15%;
+     right: 3%;
+     font-weight: bold;
+}
+ #profile {
+     font-family: 'Roboto', sans-serif;
+     font-size: 14px;
+     position: absolute;
+     right: 7%;
+     top: 15%;
+     cursor: pointer;
+     font-style: italic;
+     color: #676efe;
+     z-index: -100;
+}
+ #profilepic {
+     height: 50px;
+     width: 50px;
+     background-color: white;
+     border-radius: 50px;
+     cursor: pointer;
+     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+     border: 2px solid #676efe;
+     z-index: -100;
+}
+ #profilepic:hover {
+     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+ .profilepicpos1 {
+     position: absolute;
+     top: 14.5%;
+     right: 3%;
+}
+ #profile-pic-options {
+     height: 200px;
+     width: 200px;
+     background-color: #26242d;
+     z-index: 100;
+     position: absolute;
+     right: 2%;
+     top: 20.5%;
+     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+     border: 2px solid #676efe;
+     display: none;
+}
+ #pic1 {
+     border-radius: 50px;
+     height: 50px;
+     width: 50px;
+     position: relative;
+     margin-left: 10px;
+     margin-top: 10px;
+     cursor: pointer;
+}
+ #pic2 {
+     border-radius: 50px;
+     height: 50px;
+     width: 50px;
+     position: relative;
+     margin-left: 9px;
+     margin-top: 6px;
+     cursor: pointer;
+}
+ #pic3 {
+     border-radius: 50px;
+     height: 50px;
+     width: 50px;
+     position: relative;
+     margin-left: 10px;
+     margin-top: 6px;
+     cursor: pointer;
+}
+ #pic4 {
+     border-radius: 50px;
+     height: 50px;
+     width: 50px;
+     position: relative;
+     margin-left: 10px;
+     margin-top: 6px;
+     cursor: pointer;
+}
+ #pic5 {
+     border-radius: 50px;
+     height: 50px;
+     width: 50px;
+     position: relative;
+     margin-left: 10px;
+     margin-top: 6px;
+     cursor: pointer;
+}
+ #pic6 {
+     border-radius: 50px;
+     height: 50px;
+     width: 50px;
+     position: relative;
+     margin-left: 10px;
+     margin-top: 6px;
+     cursor: pointer;
+}
+ #pic7 {
+     border-radius: 50px;
+     height: 50px;
+     width: 50px;
+     position: relative;
+     margin-left: 10px;
+     margin-top: 6px;
+     cursor: pointer;
+}
+ #pic8 {
+     border-radius: 50px;
+     height: 50px;
+     width: 50px;
+     position: relative;
+     margin-left: 10px;
+     margin-top: 6px;
+     cursor: pointer;
+}
+ #pic9 {
+     border-radius: 50px;
+     height: 50px;
+     width: 50px;
+     position: relative;
+     margin-left: 10px;
+     margin-top: 6px;
+     cursor: pointer;
+}
+ #info {
+     font-family: 'Roboto', sans-serif;
+     cursor: context-menu;
+     color: red;
+     font-style: italic;
+     font-weight: bold;
+     z-index: -200;
+}
+ .about-html {
+     background-color: black;
+}
+ .about-img-back {
+     position: fixed;
+     top: 0;
+     left: 0;
+    /* Preserve aspet ratio */
+     min-width: 100%;
+     min-height: 100%;
+     opacity: 0.2;
+}
+ .zindex {
+     z-index: 100;
+}
+ .about-text {
+     font-family: 'Roboto', sans-serif;
+}
+ .text-head {
+     font-size: 87px;
+     position: relative;
+     margin-top: 200px;
+     background: -webkit-linear-gradient( #6a3093, #a044ff);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     -webkit-animation: fadein 2s;
+}
+ .p-text {
+     font-family: 'Roboto', sans-serif;
+     color: white;
+     position: relative;
+     -webkit-animation: fadein 2s;
+}
+ @-webkit-keyframes fadein {
+     from {
+         opacity: 0;
+    }
+     to {
+         opacity: 1;
+    }
+}
+ .copyright {
+     font-family: 'Cabin', sans-serif;
+     font-size: 12px;
+     opacity: 0.8;
+     position: relative;
+     text-align: center;
+     margin-top: 1300px;
+     z-index: 300;
+     cursor: context-menu;
+}
+.changefont {
+  font-family: 'Cabin', sans-serif;
+  font-size: 12px;
+  position: static;
+  text-align: center;
+  margin-top: 0px;
+  z-index: 300;
+  cursor: pointer;
+}
+.changefont:hover {
+  color: #676efe;
+  text-decoration: underline;
+  transition: 0.4s;
+}
+.changewallpaper {
+  font-family: 'Cabin', sans-serif;
+  font-size: 12px;
+  position: static;
+  text-align: center;
+  margin-top: 0px;
+  z-index: 300;
+  cursor: pointer;
+}
+.changeusercolor {
+  font-family: 'Cabin', sans-serif;
+  font-size: 12px;
+  position: static;
+  text-align: center;
+  margin-top: 0px;
+  z-index: 300;
+  cursor: pointer;
+}
+.changeusercolor:hover {
+  color: #676efe;
+  text-decoration: underline;
+  transition: 0.4s;
+}
+.changewallpaper:hover {
+  color: #676efe;
+  text-decoration: underline;
+  transition: 0.4s;
+}
+ .creator {
+     font-family: 'Cabin', sans-serif;
+     font-style: italic;
+     font-size: 13px;
+     color: #676efe;
+     cursor: context-menu;
+}
+ .creatorpos1 {
+     margin-left: 90px;
+}
+ .creatorpos2 {
+     margin-left: 130px;
+     margin-top: 9px;
+}
+ .navfont {
+     font-family: 'IBM Plex Mono', sans-serif;
+}

@@ -1,0 +1,39 @@
+#pic0 {
+	position:absolute;
+	width: 104.5px;
+	height: 500px;
+	right: 10%;
+	top: 18%;
+}
+#pic1 {
+	position:absolute;
+	width: 178.75px;
+	height: 53.75px;
+}
+#pic2 {
+	position: absolute;
+	width: 178.75px;
+	height: 70px;
+}
+#pic3 {
+	position: absolute;
+	width: 178.75px;
+	height: 70px;
+}
+#pic4 {
+	position: absolute;
+	width: 178.75px;
+	height: 70px;
+}
+.finishlinetext {
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: white;
+	position: absolute;
+	top: 44%;
+	right: 7%;
+	transform: rotate(270deg);
+	cursor: context-menu;
+	-webkit-animation: fadein 2s;
+}
