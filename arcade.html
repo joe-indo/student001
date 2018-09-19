@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GG Gaming Arcade | Arcade</title>
+	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Space+Mono:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Montserrat:400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Passion+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/style/style.css">
+	<script type="text/javascript" src="assets/script/script.js"></script>
+</head>
+<body class="arcade" onload="codegive()">
+<div class="header-nav-box header-nav-shadow">
+<div class="header-nav nav-font" id="changefont11">
+<a href="index.html" class="logo">GG</a>
+<ul>
+	<li><a href="index.html">HOME</a></li>
+	<li><a href="arcade.html">ARCADE</a></li>
+	<li><a href="store.html">STORE</a></li>
+	<li><a href="about.html">ABOUT</a></li>
+</ul>
+<input type="button" class="promo" id="promocode" onclick="promo()" value="PROMO">
+<input type="button" class="cashout-pos" id="cashout" value="CASH OUT" onclick="cashout()">
+</div>
+<p id="bitcoin"></p><p class="bit">Ƀ</p>
+</div>
+
+<img src="assets/pics/" class="store-img-back" id="imgback">
+<h1 id="changefont1" class="intro main">Welcome to the Arcade</h1>
+
+<p id="changefont2" class="intro sub">Here where you can choose the games you would like to play. All the games are 100% free to play and accessible from anywhere. </p>
+<!--Add this maequee as a news with a promo code that shows up after a certain amount of time !-->
+<marquee><p id="info">We are now giving away promo codes! Codes will appear here the longer you are on the site. Make sure you choose wisely as you can only redeem one promo code!</p></marquee>
+<div class="content con1">
+<div class="pacman">
+<img class="pacmanimg" src="assets/pics/pacman.png">
+<p id="changefont3" class="description despos1">The player controls a circular character which has a pie wedge shaped mouth to eat pellets through a maze, eating Pac-Dots. When all dots are eaten, Pac-Man is taken to the next stage. Four ghosts, Blinky, Pinky, Inky and Clyde roam the maze, trying to catch Pac-Man.</p>
+<input type="button" value="PLAY" onclick="pacman()" class="playgame buttonpos1">
+<p id="changefont4" class="creator creatorpos1">Coded By: Putchu.be</p>
+</div>
+</div>
+
+<div class="content con2">
+<div class="game">
+<img class="brickimg" src="assets/pics/brickbreak.png">
+<p id="changefont5" class="description despos2">Brick Breaker is a Breakout clone in which the player must <br>smash a wall of bricks by deflecting a bouncing ball with<br> a paddle. The paddle may move horizontally and is controlled <br>with the BlackBerry's trackwheel, the computer's mouse or the touch of a finger (in the case of touchscreen).</p>
+<input type="button" value="PLAY" onclick="brickbreak()" class="playgame buttonpos2">
+<p id="changefont6" class="creator creatorpos2">Coded By: Keith</p>
+</div>
+</div>
+
+<div class="content con3">
+<div class="game tictactoe">
+<img src="assets/pics/tictactoe.png" class="ticimg">
+<p id="changefont7" class="description despos3">Tic-tac-toe (also known as noughts and crosses or Xs and Os)<br> is a paper-and-pencil game for two players, X and O, who <br> taketurns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal,<br> vertical, or diagonal row wins the game.</p>
+<input type="button" value="PLAY" onclick="tictactoe()" class="playgame buttonpos2">
+<p id="changefont8" class="creator creatorpos2">Coded By: Salif Mehmed</p>
+</div>
+</div>
+
+<div class="content con4">
+<div class="game spaceInvader">
+<img src="assets/pics/racegamelogo.png" class="imgracegame">
+<p id="changefont9" class="description despos3">The racing video game genre is the genre of video games, either<br> in the first-person or third-person perspective, in which the player<br> partakes in a racing competition with any type of land, water, air <br>or space vehicles. They may be based on anything from real-<br>world racing leagues to entirely fantastical settings. In general, <br>they can be distributed along a spectrum anywhere between hardcore simulations, and simpler arcade racing games.</p>
+<input type="button" value="PLAY" onclick="racegame()" class="playgame buttonpos2">
+<p id="changefont10" class="creator creatorpos2">Coded By: Lee</p>
+</div>
+</div>
+
+<div class="content con5">
+<div class="game spaceInvader">
+<img src="assets/pics/game4logo.png" class="imggghide">
+<p id="changefont9" class="description despos5">Hide-and-seek, or hide-and-go-seek, is a popular children's game in which any number of players (ideally at least three) conceal themselves in the environment, to be found by one or more seekers.</p>
+<input type="button" value="PLAY" onclick="hideandseek()" class="playgame buttonpos2">
+<p id="changefont10" class="creator creatorpos2">Coded By: Keith</p>
+</div>
+</div>
+
+<div class="content con6">
+<div class="game spaceInvader">
+<img src="assets/pics/slot.png" class="imgslot">
+<p id="changefont9" class="description despos3">
+A slot machine, known variously as a fruit machine, puggy, the <br>slots, poker machine/pokies, or simply slot, is a casino gambling machine with three or more reels which spin when a button is pushed. </p>
+<input type="button" value="PLAY" onclick="slot()" class="playgame buttonpos2">
+<p id="changefont10" class="creator creatorpos2">Coded By: Lee</p>
+</div>
+</div>
+
+<div class="profile">
+	<img src="assets/pics/profile.png" id="profilepic" class="profilepicpos1" onclick="profilepic('profile-pic-options')">
+	<p id="profile" onclick="profilename()">Username</p>
+</div>
+<div id="profile-pic-options" >
+	<img src="assets/pics/pic1.jpg" id="pic1" onclick="choosepic()">
+	<img src="assets/pics/pic2.png" id="pic2" onclick="choosepic2()">
+	<img src="assets/pics/pic3.png" id="pic3" onclick="choosepic3()">
+	<img src="assets/pics/pic4.png" id="pic4" onclick="choosepic4()">
+	<img src="assets/pics/pic5.png" id="pic5" onclick="choosepic5()">
+	<img src="assets/pics/pic6.png" id="pic6" onclick="choosepic6()">
+	<img src="assets/pics/pic7.png" id="pic7" onclick="choosepic7()">
+	<img src="assets/pics/pic8.jpg" id="pic8" onclick="choosepic8()">
+	<img src="assets/pics/pic9.png" id="pic9" onclick="choosepic9()">
+</div>
+</body>
+<footer>
+	<p class="copyright">Copyright © 2018 GG Gaming Inc. All rights reserved.</p>
+	<p class="changefont" onclick="changingfont()">Change Font</p>
+	<p class="changewallpaper" onclick="changingwall()">Change Wallpaper</p>
+	<p class="changeusercolor" onclick="changingusercolor()">Change Username Color</p>
+</footer>
+</html>

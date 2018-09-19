@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GG Gaming Arcade | About</title>
+<!--Fonts [Start]-->
+	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Space+Mono:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Montserrat:400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Passion+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+<!--End-->
+
+<!--CSS, JAVASCRIPT files linking [Start]-->
+	<link rel="stylesheet" type="text/css" href="assets/style/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/style/new.css">
+	<script type="text/javascript" src="assets/script/script.js"></script>
+<!--End-->
+</head>
+<body class="store-body">
+<!--Navigation Bar [Start]-->
+<div class="header-nav zindex navfont">
+<a href="index.html" class="newlogo">GG</a>
+<ul>
+	<li><a href="index.html">HOME</a></li>
+	<li><a href="arcade.html">ARCADE</a></li>
+	<li><a href="store.html">STORE</a></li>
+	<li><a href="about.html">ABOUT</a></li>
+</ul>
+<input type="button" id="cashin" value="CASH IN" onclick="cashin()">
+</div>
+<!--End-->
+
+<!--Currency System [Start]-->
+<p id="currency"></p><p class="currency-icon">Ƀ</p>
+<div class="currency-back"></div>
+<!--End-->
+
+<!--Background Image [Start]-->
+<img src="assets/pics/bgstorecar.gif" class="store-img-back">
+<!--End-->
+
+
+
+<!--Item Shop Basic container [Start]-->
+<p class="shop-title">WELCOME TO THE SHOP</p>
+<p class="shop-item-type shop-item-type-pos1">/ Gaming Enhancements /</p>
+
+<div class="item-shop item-shop-pos1">
+	<p class="item-in-shop item-in-shop-pos">EXTRA LIFE</p>
+	<p class="cost-life-amount">Cost: 40Ƀ</p>
+	<input type="text" placeholder="Amount" id="xtra-life-amount" class="amount-look">
+	<input type="button" value="Buy" id="buy" class="btn-pos1" onclick="buyxtralife('xtra-life-amount')">
+</div>
+
+<div class="item-shop item-shop-pos2">
+	<p class="item-in-shop item-in-shop-pos1">BOOSTS</p>
+	<p class="cost-boost-amount">Cost: 100Ƀ</p>
+	<input type="text" placeholder="Amount" id="boost-amount" class="amount-look">
+	<input type="button" value="Buy" id="buy" class="btn-pos2" onclick="boosting('boost-amount')">
+</div>
+
+<div class="item-shop item-shop-pos3">
+	<p class="item-in-shop item-in-shop-pos1">VISUALS</p>
+	<p class="car-names car-names-pos1">LAMBORGHINI</p> <p class="car-names car-names-pos2">FORMULA 1</p><p class="car-names car-names-pos3">AUDI R8</p>
+	<img src="assets/pics/ccar1.png" class="racinggame racinggame-pos1" onclick="buycar1()">
+	<img src="assets/pics/ccar4.png" class="racinggamenew racinggame-pos4" onclick="buycar2()">
+	<img src="assets/pics/ccar5.png" class="racinggame racinggame-pos5" onclick="buycar3()">
+</div>
+<!--End-->
+
+<!--Item Shop Basic container 2 [Start]-->
+<p class="shop-item-type shop-item-type-pos2">/ Website Enhancements /</p>
+<div class="item-shop item-shop-pos4">
+	<p class="item-in-shop item-in-shop-pos4">CHANGE FONT</p>
+		<p class="cost-font-amount">Cost: 500Ƀ</p>
+		<p class="font-sell font-sell-pos1" onclick="styleone()">Style One</p>
+		<p class="font-sell font-sell-pos2" onclick="styletwo()">Style Two</p>
+		<p class="font-sell font-sell-pos3" onclick="stylethree()">Style Three</p>
+		<p class="font-sell font-sell-pos4" onclick="stylefour()">Style Four</p>
+		<p class="font-sell font-sell-pos5" onclick="stylefive()">Style Five</p>
+	 <p class="font-sell font-sell-pos6" onclick="stylesix()">Style Six</p>
+	 <p class="to-do-font">Click the font <b>above</b> that you would like to buy.</p>
+</div>
+
+<div class="item-shop item-shop-pos5">
+	<p class="item-in-shop item-in-shop-pos5">WALLPAPER</p>
+	<p class="cost-wall-amount">Cost: 200Ƀ</p>
+	<img src="assets/pics/wall1.gif" class="wall-shop-item wall-shop-item-pos1" onclick="changewall1()">
+	<img src="assets/pics/wall2.gif" class="wall-shop-item wall-shop-item-pos2" onclick="changewall2()">
+	<img src="assets/pics/wall3.gif" class="wall-shop-item wall-shop-item-pos3" onclick="changewall3()">
+	<img src="assets/pics/wall4.gif" class="wall-shop-item wall-shop-item-pos4" onclick="changewall4()">
+	<p class="item-to-do-font">Click the wallpaper <b>above</b> that you would like to buy.</p>
+</div>
+
+<div class="item-shop item-shop-pos6">
+	<p class="item-in-shop item-in-shop-pos6">USER COLOR CHANGE</p>
+	<p class="cost-wall-amount">Cost: 50Ƀ</p>
+	<p class="color-change color-change-pos1" style="color:white;" onclick="coloruserchange1()">White</p>
+	<p class="color-change color-change-pos2" style="color:#f80759;" onclick="coloruserchange2()">Pink</p>
+	<p class="color-change color-change-pos3" style="color:red;" onclick="coloruserchange3()">Red</p>
+	<p class="color-change color-change-pos4" style="color:blue;" onclick="coloruserchange4()">Blue</p>
+	<p class="color-item-des">Click the font color <b>below</b> that you would like to buy.</p>
+</div>
+<!--End-->
+</body>
+</html>

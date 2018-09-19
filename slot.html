@@ -1,0 +1,75 @@
+<html>
+<head>
+<title></title>
+<script>
+        function alert( imessage ) {
+            document.getElementById('messages').innerHTML = imessage;
+        }
+
+        function refresh()
+        {
+                var one = Math.floor((Math.random()*3)+1);
+                var two = Math.floor((Math.random()*3)+1);
+                var three = Math.floor((Math.random()*3)+1);
+
+                document.getElementById('first').innerHTML = one;
+                document.getElementById('second').innerHTML = two;
+                document.getElementById('third').innerHTML = three;
+
+                if ( one == two && two == three && three == one  ) {
+                    alert( 'WINNNNEEEEEERRRRR!!!!!' );
+                } else {
+                    alert( 'Better luck Next Time!' );
+                }
+				}
+    </script>
+<style>
+  #machine {
+            text-align: center;
+        }
+		   p, a {
+            color: yellow;
+            font-weight: 12px;
+			text-align: center;
+</style>		
+<body bgcolor ="#000000">
+<p align="middle">
+<font size="300" face="Algerian" color ="yellow"> 
+Slot machine game
+</font>
+</p> 
+<div id="machine">
+    <svg width="550" height="250" align ="middle" viewBox="0 0 1600 500">
+
+    <rect x="0" y="10" width="500" height="500" fill="black" stroke="white" stroke-width="10">
+    </rect>
+
+    <rect x="550" y="10" width="500" height="500" fill="black" stroke="white" stroke-width="10">
+    </rect>
+
+    <rect x="1100" y="10" width="500" height="500" fill="black" stroke="white" stroke-width="10">
+    </rect>
+
+    <text x="100" y="415" font-family="courier" font-size="500" fill="white" id="first">
+    0
+    </text>
+
+    <text x="650" y="415" font-family="courier" font-size="500" fill="white" id ="second">
+    0
+    </text>
+
+    <text x="1200" y="415" font-family="courier" font-size="500" fill="white" id="third">
+    0
+    </text>
+    </svg>
+</div>
+
+<p
+    <font size= "100">
+    <input type="button" value="Click Here To Spin" onClick="refresh()">
+	</font>
+</p>
+<p id="messages"></p>
+
+</body>
+</html>

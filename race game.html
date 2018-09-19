@@ -1,0 +1,206 @@
+<html>
+<head>
+  <title>Cyberline Racing</title>
+  <link rel="stylesheet" type="text/css" href="assets/style/speed.css">
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Space+Mono:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Montserrat:400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Passion+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+  <script>
+
+  </script>
+  <style>
+  h1 {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    cursor: context-menu;
+  }
+  h2 {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    cursor: context-menu;
+  }
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    cursor: context-menu;
+  }
+  body {
+    background-color: black;
+  }
+  .store-img-back {
+    position: fixed;
+  	top: 0;
+  	left: 0;
+  	/* Preserve aspet ratio */
+  	min-width: 100%;
+  	min-height: 100%;
+    z-index: -500;
+    opacity: 0.1;
+  }
+  .goback {
+       color: white;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+      border-radius: 10px;
+      background-color: transparent;
+      padding: 7px 18px;
+      font-family: 'Cabin', sans-serif;
+      border: 2px solid #676efe;
+      cursor: pointer;
+      position: absolute;
+      top: 4%;
+      left: 2%;
+      z-index: 700;
+  }
+  .goback:hover {
+      cursor: pointer;
+      background-color: #676efe;
+      transition: 0.6s;
+  }
+  </style>
+</head>
+<body onload="code()">
+<h1>CYBERLINE RACING</h1>
+<h2>INSTRUCTIONS</h2>
+<p>Player 1 = press "D" Player 2 = press = "H" Player 3 = press "L" Player 4 = press Arrow Left Key</p>
+<p style="font-style:italic; color: red;">There must be 4 players to play.</p>
+<img src="assets/pics/bgstorehighres.gif" class="store-img-back" id="imgback">
+<p class="finishlinetext">FINISH LINE</p>
+<input type="button" class="goback" id="goback" onclick="goingclose()" value="GO BACK">
+<br>
+<br><br><br>
+<img id ="pic0" src="assets/pics/finishline.jpg" align = "right">
+
+<img id="pic1" src="assets/pics/car1.png">
+
+<br><br><br>
+<br><br><br>
+
+<img id="pic2" src="assets/pics/car2.png">
+
+<br><br><br>
+<br><br><br>
+
+<img id="pic3" src="assets/pics/car3.png">
+
+<br><br><br>
+<br><br><br>
+
+<img id="pic4" src="assets/pics/car4.png">
+
+
+
+<script>
+function code() {
+  var showcode = prompt("Please input a valid visual code if you have one.");
+  if (showcode == "VSIAL1") {
+    var carpos = prompt("Please choose what car position you would like your car in. Positions: 1-4");
+    if (carpos == 1) {
+      document.getElementById("pic1").src = "assets/pics/ccar1.png";
+    }else if (carpos == 2) {
+      document.getElementById("pic2").src = "assets/pics/ccar1.png";
+    }else if (carpos == 3) {
+      document.getElementById("pic3").src = "assets/pics/ccar1.png";
+    }else if (carpos == 4) {
+      document.getElementById("pic4").src = "assets/pics/ccar1.png";
+    }
+}else if (showcode == "VSIAL2") {
+  var carpos = prompt("Please choose what car position you would like your car in. Positions: 1-4");
+  if (carpos == 1) {
+    document.getElementById("pic1").src = "assets/pics/ccar5.png";
+  }else if (carpos == 2) {
+    document.getElementById("pic2").src = "assets/pics/ccar5.png";
+  }else if (carpos == 3) {
+    document.getElementById("pic3").src = "assets/pics/ccar5.png";
+  }else if (carpos == 4) {
+    document.getElementById("pic4").src = "assets/pics/ccar5.png";
+  }
+}else if (showcode == "VSIAL3") {
+  var carpos = prompt("Please choose what car position you would like your car in. Positions: 1-4");
+  if (carpos == 1) {
+    document.getElementById("pic1").src = "assets/pics/ccar4.png";
+  }else if (carpos == 2) {
+    document.getElementById("pic2").src = "assets/pics/ccar4.png";
+  }else if (carpos == 3) {
+    document.getElementById("pic3").src = "assets/pics/ccar4.png";
+  }else if (carpos == 4) {
+    document.getElementById("pic4").src = "assets/pics/ccar4.png";
+  }
+}else {
+  alert("No Code Detected.");
+}
+}
+function goingclose() {
+  window.close();
+}
+
+xPos1 = 30;
+yPos1 = 200;
+xPos2 = 30;
+yPos2 = 200;
+xPos3 = 30;
+yPos3 = 200;
+xPos4 = 30;
+yPos4 = 200;
+
+
+document.addEventListener("keyup", arrowMove1);
+
+function arrowMove1() {
+  var keyName = event.key;
+
+  if(keyName == "d"){
+   xPos1 = xPos1 + 20;
+document.getElementById("pic1").style.left = xPos1 + "px";
+	}
+  else if(keyName == "h"){
+  xPos2 = xPos2 + 20;
+document.getElementById("pic2").style.left = xPos2 +"px";
+  }
+  else if(keyName == "l"){
+  xPos3 = xPos3 + 20;
+document.getElementById("pic3").style.left = xPos3 +"px";
+  }
+   else if(keyName == "ArrowRight"){
+  xPos4 = xPos4 + 20;
+ document.getElementById("pic4").style.left = xPos4 +"px";
+ win();
+ }
+
+}
+
+function win(){
+ var winner;
+   if (xPos1 >= 1500){
+    alert( "Player 1 is the winner");
+	}
+	else if (xPos2 >= 1500){
+    alert( "Player 2 is the winner");
+	}
+	else if (xPos3 >= 1500){
+    alert( "Player 3 is the winner");
+	}
+	else if (xPos4 >= 1500){
+    alert( "Player 4 is the winner");
+	}
+
+	}
+</script>
+</body>
+</html>

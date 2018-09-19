@@ -1,0 +1,753 @@
+<html>
+
+<head>
+	<title>Arrays ISU</title>
+<p id="hey"></p>      <!--p id for the document.write-->
+<p id="hey2"></p>     <!--p id for the document.write-->
+<p id="hey3"></p>     <!--p id for the document.write-->
+<p id="pri"></p>      <!--p id for the document.write-->
+	<script type="text/javascript">
+
+
+
+function button(){
+	alert("Hello! Lets play hide and seek");   //alerts an info
+
+
+	var input = [];				                      // array for the user
+    		var t;						                    // var for the limit
+        		for (t = 0; t < 5; t++) {	        // a limit for the array
+           			 input.push(Number(prompt("Type your number:" + (t + 1))));	//asks the user for the array
+
+
+	}
+alert("click on a letter on the keyboard to find it!");     //alerts an info
+
+window.addEventListener("keydown", event => {           //an event listener that triggers when a certain key is pressed
+    if (event.key == "m") {
+      document.getElementById("hey3").innerHTML= (" Your numbers are " + input );//prints out results
+  }
+  });
+
+   window.addEventListener("keyup", event => {      //an event listener that triggers when a certain key is pressed
+    if (event.key == "m") {
+       document.getElementById("hey3").innerHTML="";//prints out results
+       alert("Good Job!");                    //alerts an info
+       alert("Play more!!!!") ;                 //alerts an info
+    }
+  });
+   window.addEventListener("keydown", event => {
+    if (event.key == "t") {
+      document.getElementById("hey3").innerHTML= (" Not me (^.^)" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "t") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+
+
+   window.addEventListener("keydown", event => {
+    if (event.key == "j") {
+      document.getElementById("hey3").innerHTML= (" You're almost there (^_^)" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "j") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+ window.addEventListener("keydown", event => {
+    if (event.key == "q") {
+      document.getElementById("hey3").innerHTML= (" You're so far away from the answer.(<>..<>)" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "q") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+   window.addEventListener("keydown", event => {
+    if (event.key == "z") {
+      document.getElementById("hey3").innerHTML= (" You're still far away.X(" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "z") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+    window.addEventListener("keydown", event => {
+    if (event.key == "c") {
+      document.getElementById("hey3").innerHTML= (" C!!!!.nope. this is not the answer.( o_o)" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "c") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+    window.addEventListener("keydown", event => {
+    if (event.key == "g") {
+      document.getElementById("hey3").innerHTML= (" Need hint? click the hint button! >_<*" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "g") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+     window.addEventListener("keydown", event => {
+    if (event.key == "d") {
+      document.getElementById("hey3").innerHTML= (" give up?? click hint button! (-_-* )" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "d") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+       window.addEventListener("keydown", event => {
+    if (event.key == "y") {
+      document.getElementById("hey3").innerHTML= (" why oh why HAHAHAHA |-I" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "y") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+          window.addEventListener("keydown", event => {
+    if (event.key == "o") {
+      document.getElementById("hey3").innerHTML= (" geez. not here... :/" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "o") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+          window.addEventListener("keydown", event => {
+    if (event.key == "r") {
+      document.getElementById("hey3").innerHTML= ("Come on . find it! Quick!|_|'" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "r") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+         window.addEventListener("keydown", event => {
+    if (event.key == "l") {
+      document.getElementById("hey3").innerHTML= ("Getting closer aren't ya?");
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "l") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+         window.addEventListener("keydown", event => {
+    if (event.key == "a") {
+      document.getElementById("hey3").innerHTML= ("zzzzzzzz");
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "a") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+          window.addEventListener("keydown", event => {
+    if (event.key == "e") {
+      document.getElementById("hey3").innerHTML= ("You're still here?^w^");
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "e") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+          window.addEventListener("keydown", event => {
+    if (event.key == "i") {
+      document.getElementById("hey3").innerHTML= ("find it! Hurry up!-_-+");
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "i") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+             window.addEventListener("keydown", event => {
+    if (event.key == "u") {
+      document.getElementById("hey3").innerHTML= ("Just surrender...");
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "u") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+
+
+
+
+
+
+
+
+}
+
+function button2(){
+	alert("Can you find me in descending order?");     //alerts an info
+
+
+	var arr2 = [];				       // array for the user
+
+
+    		var y;						// var for the limit
+
+        		for (y = 0; y < 5; y++) {	// a limit for the array
+
+           			 arr2.push(Number(prompt("Type your numbers" + (y + 1))));	//asks the user for the array
+      				arr2.sort(function(a, b){return b-a});          //sorts out the array into descending order
+
+    			}
+    				alert("click on a letter on the keyboard to find it!");     //alerts an info
+
+window.addEventListener("keydown", event => {          //an event listener that triggers when a certain key is pressed
+    if (event.key == "k") {
+      document.getElementById("hey3").innerHTML= (" Your numbers in descending order are " + arr2 );  //prints out results
+
+
+    }
+  });
+
+
+   window.addEventListener("keyup", event => {         //an event listener that triggers when a certain key is pressed
+    if (event.key == "k") {
+       document.getElementById("hey3").innerHTML="";    //prints out results
+   alert("Nice!") ;                       //alerts an info
+   alert("Good job!");                    //alerts an info
+
+    }
+  });
+
+   window.addEventListener("keydown", event => {
+    if (event.key == "t") {
+      document.getElementById("hey3").innerHTML= (" Not me (^.^)" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "t") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+
+
+   window.addEventListener("keydown", event => {
+    if (event.key == "j") {
+      document.getElementById("hey3").innerHTML= (" You're almost there (^_^)" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "j") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+ window.addEventListener("keydown", event => {
+    if (event.key == "q") {
+      document.getElementById("hey3").innerHTML= (" You're so far away from the answer.(<>..<>)" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "q") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+   window.addEventListener("keydown", event => {
+    if (event.key == "z") {
+      document.getElementById("hey3").innerHTML= (" You're still far away.X(" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "z") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+    window.addEventListener("keydown", event => {
+    if (event.key == "c") {
+      document.getElementById("hey3").innerHTML= (" C!!!!.nope. this is not the answer.( o_o)" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "c") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+    window.addEventListener("keydown", event => {
+    if (event.key == "g") {
+      document.getElementById("hey3").innerHTML= (" Need hint? click the hint button! >_<*" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "g") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+     window.addEventListener("keydown", event => {
+    if (event.key == "d") {
+      document.getElementById("hey3").innerHTML= (" give up?? click hint button! (-_-* )" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "d") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+       window.addEventListener("keydown", event => {
+    if (event.key == "y") {
+      document.getElementById("hey3").innerHTML= (" why oh why HAHAHAHA |-I" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "y") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+          window.addEventListener("keydown", event => {
+    if (event.key == "o") {
+      document.getElementById("hey3").innerHTML= (" geez. not here... :/" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "o") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+          window.addEventListener("keydown", event => {
+    if (event.key == "r") {
+      document.getElementById("hey3").innerHTML= ("Come on . find it! Quick!|_|'" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "r") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+         window.addEventListener("keydown", event => {
+    if (event.key == "l") {
+      document.getElementById("hey3").innerHTML= ("Getting closer aren't ya?");
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "l") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+         window.addEventListener("keydown", event => {
+    if (event.key == "a") {
+      document.getElementById("hey3").innerHTML= ("zzzzzzzz");
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "a") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+          window.addEventListener("keydown", event => {
+    if (event.key == "e") {
+      document.getElementById("hey3").innerHTML= ("You're still here?^w^");
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "e") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+          window.addEventListener("keydown", event => {
+    if (event.key == "i") {
+      document.getElementById("hey3").innerHTML= ("find it! Hurry up!-_-+");
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "i") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+             window.addEventListener("keydown", event => {
+    if (event.key == "u") {
+      document.getElementById("hey3").innerHTML= ("Just surrender...");
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "u") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+
+
+
+
+
+
+
+
+	}
+	function button3(){
+	alert("Can you find me the smallest number?");   //alerts an info
+
+
+	var arr3 = [];
+    		var w;
+        		for (w = 0; w < 5; w++) {
+        				 arr3.push(Number(prompt("Type your numbers" + (w + 1))));
+           			arr3.sort(function(a, b){return a-b});
+
+
+    			}
+    				alert("click on a letter on the keyboard to find it!");
+
+window.addEventListener("keydown", event => {
+    if (event.key == "p") {
+      document.getElementById("hey3").innerHTML= (" The smallest number is " + arr3[0] );
+
+
+    }
+  });
+	 window.addEventListener("keyup", event => {
+    if (event.key == "p") {
+       document.getElementById("hey3").innerHTML="";
+   alert("Nice!!!") ;
+   alert("Good job. You just wasted your time") ;
+
+    }
+  });
+   window.addEventListener("keydown", event => {
+    if (event.key == "t") {
+      document.getElementById("hey3").innerHTML= (" Not me (^.^)" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "t") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+
+
+   window.addEventListener("keydown", event => {
+    if (event.key == "j") {
+      document.getElementById("hey3").innerHTML= (" You're almost there (^_^)" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "j") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+ window.addEventListener("keydown", event => {
+    if (event.key == "q") {
+      document.getElementById("hey3").innerHTML= (" You're so far away from the answer.(<>..<>)" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "q") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+   window.addEventListener("keydown", event => {
+    if (event.key == "z") {
+      document.getElementById("hey3").innerHTML= (" You're still far away.X(" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "z") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+    window.addEventListener("keydown", event => {
+    if (event.key == "c") {
+      document.getElementById("hey3").innerHTML= (" C!!!!.nope. this is not the answer.( o_o)" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "c") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+    window.addEventListener("keydown", event => {
+    if (event.key == "g") {
+      document.getElementById("hey3").innerHTML= (" Need hint? click the hint button! >_<*" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "g") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+     window.addEventListener("keydown", event => {
+    if (event.key == "d") {
+      document.getElementById("hey3").innerHTML= (" give up?? click hint button! (-_-* )" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "d") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+       window.addEventListener("keydown", event => {
+    if (event.key == "y") {
+      document.getElementById("hey3").innerHTML= (" why oh why HAHAHAHA |-I" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "y") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+          window.addEventListener("keydown", event => {
+    if (event.key == "o") {
+      document.getElementById("hey3").innerHTML= (" geez. not here... :/" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "o") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+          window.addEventListener("keydown", event => {
+    if (event.key == "r") {
+      document.getElementById("hey3").innerHTML= ("Come on . find it! Quick!|_|'" );
+
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "r") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+         window.addEventListener("keydown", event => {
+    if (event.key == "l") {
+      document.getElementById("hey3").innerHTML= ("Getting closer aren't ya?");
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "l") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+         window.addEventListener("keydown", event => {
+    if (event.key == "a") {
+      document.getElementById("hey3").innerHTML= ("zzzzzzzz");
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "a") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+          window.addEventListener("keydown", event => {
+    if (event.key == "e") {
+      document.getElementById("hey3").innerHTML= ("You're still here?^w^");
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "e") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+          window.addEventListener("keydown", event => {
+    if (event.key == "i") {
+      document.getElementById("hey3").innerHTML= ("find it! Hurry up!-_-+");
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "i") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+             window.addEventListener("keydown", event => {
+    if (event.key == "u") {
+      document.getElementById("hey3").innerHTML= ("Just surrender...");
+
+    }
+  });
+   window.addEventListener("keyup", event => {
+    if (event.key == "u") {
+       document.getElementById("hey3").innerHTML="";
+
+    }
+  });
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+function hint(){
+	alert("click a letter and find the answer");
+}
+
+
+
+
+</script>
+
+</head>
+
+<body>
+
+		<center><font color=Black> <p style="font-size:50px"> Hide and Seek </font></center>
+				<center><button onclick="button()">Click ME!</button></center>
+							<center><p id="pri"></center>
+				<center><button onclick="button2()">Click ME!</button></center>
+				<center><button onclick="button3()">Click ME!</button></center>
+				<center><button onclick="hint()">Hint-_-</button></center>
+
+</body>
+
+</html>

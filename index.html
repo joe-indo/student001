@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GG Gaming Arcade | Home</title>
+<!--Fonts [Start]-->
+	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Space+Mono:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Montserrat:400,500,600,700" rel="stylesheet">
+<!--End-->
+
+<!--CSS, JAVASCRIPT files linking [Start]-->
+	<link rel="stylesheet" type="text/css" href="assets/style/style.css">
+	<script type="text/javascript" src="assets/script/script.js"></script>
+<!--End-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+</head>
+<body>
+
+<!--Navigation Bar [Start]-->
+<div class="header-nav nav-font">
+<a href="index.html" class="logo">GG</a>
+<ul>
+	<li><a href="index.html">HOME</a></li>
+	<li><a href="arcade.html">ARCADE</a></li>
+	<li><a href="store.html">STORE</a></li>
+	<li><a href="about.html">ABOUT</a></li>
+</ul>
+</div>
+<!--End-->
+
+<!--Image Slider [Start]-->
+<div>
+  <img class="mySlides" src="assets/pics/home4.gif">
+  <img class="mySlides" src="assets/pics/home3.gif">
+  <img class="mySlides" src="assets/pics/home2.gif">
+  <img class="mySlides" src="assets/pics/home1.gif">
+
+  <button class="slidebtn left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="slidebtn right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<!--End-->
+
+<!--Intro Text [Start]-->
+<p class="welcome">WELCOME TO GG  GAMING-ARCADE</p>
+<h1 class="title">WELCOME ──── <br>TO THE ARCADE</h1>
+<h1 class="bcktitle">ARCADE</h1>
+<!--End-->
+
+</body>
+</html>
